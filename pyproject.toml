@@ -1,0 +1,26 @@
+[project]
+name = "mcp-rag-starter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.23",
+    "langchain-chroma>=0.2.2",
+    "langchain-community>=0.3.21",
+    "langchain-huggingface>=0.1.2",
+    "langchain-openai>=0.3.12",
+    "langchain-text-splitters>=0.3.8",
+    "mcp[cli]>=1.6.0",
+    "unstructured>=0.12.3",    # PDF 및 다양한 문서 형식 처리
+    "pdf2image>=1.17.0",       # PDF 처리 의존성
+    "pypdf>=4.0.1",            # PDF 텍스트 추출
+    "markdown>=3.5.2",         # 마크다운 처리
+    "pillow>=10.2.0",          # 이미지 처리 (PDF 변환)
+    "pytesseract>=0.3.10",     # OCR 기능 (선택사항)
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+]
