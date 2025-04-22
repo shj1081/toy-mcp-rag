@@ -1,0 +1,28 @@
+# 불필요한 파일/디렉토리 제외
+.git
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# 데이터 디렉토리 (볼륨 마운트로 관리할 것들)
+docs/
+vector_store/
+
+# 로그 파일
+*.log
+
+# script 파일
+*.sh
+
+# 캐시 디렉토리
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
